@@ -73,6 +73,16 @@ URL --> https://vehicle-visual-map.s3.amazonaws.com/map/visual_map.html
 PS: DEMO screenshots available in D2D_Vehicle_Location_API/README.md file
 
 
+Libraries Used:
+---------------------------------------------------------------------------------------
+
+1. _folium_ -- A python package for visualizing maps that makes it easy to visualize data that's been manipulated in Python on an interactive leaflet map. It enables both the binding of data to a map for choropleth visualizations as well as passing rich vector/raster/HTML visualizations as markers on the map.
+
+2. _requests_ -- A python package to call REST APIs seamlessly and easily
+
+3. _geopy_ -- A python client for several popular geocoding web services which makes it easy to locate the coordinates of addresses, cities, countries, and landmarks across the globe using third-party geocoders and other data sources.
+
+
 Overview of "D2D_Vehicle_Location_Tracker" Workflow:
 ------------------------------------------------------------------------------------
 
