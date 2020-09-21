@@ -70,6 +70,7 @@ URL --> https://vehicle-visual-map.s3.amazonaws.com/map/visual_map.html
 
 ** NOTE: To register a new vehicle and start sending location updates, call the REST endpoints and view the result by clicking the above URL **
 
+## DEMO screenshots available in demo.md file ##
 
 
 Overview of "D2D_Vehicle_Location_Tracker" Workflow:
@@ -132,3 +133,5 @@ Solution:
 
 Visualize all the vehicle nodes as a cluster on a map
 Clone the module from the repo and run "visual_map.html" to view the result
+
+## DEMO screenshots available in demo.md file ##
