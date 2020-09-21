@@ -5,7 +5,7 @@
 
 # Vehicle Markers #
 
-![Alt text](/D2D_Vehicle_Location_API/vehicle_marker.jpg?raw=true "Cluster Map")
+![Alt text](/D2D_Vehicle_Location_API/vehicle_markers.jpg?raw=true "Cluster Map")
 
 # Vehicle Route #
 
