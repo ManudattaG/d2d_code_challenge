@@ -40,11 +40,11 @@ Project Structure:
 Pre requisites:
 ---------------------------------------------------------------------------------------
 
-* Python 3.7
+* Python 3.7 or Python 3.8
 * AWS Lambda with Layers
 * Amazon API Gateway
 * Amazon DynamoDB
-* Amazon S3 Bucket
+* Amazon S3
 
 REST API endpoints:
 ---------------------------------------------------------------------------------------
@@ -70,7 +70,7 @@ URL --> https://vehicle-visual-map.s3.amazonaws.com/map/visual_map.html
 
 ** NOTE: To register a new vehicle and start sending location updates, call the REST endpoints and view the result by clicking the above URL **
 
-PS: DEMO screenshots available in D2D_Vehicle_Location_API/README.md file
+PS: DEMO screenshots available in D2D_Vehicle_Location_API/README.md
 
 
 Libraries Used:
@@ -78,7 +78,7 @@ Libraries Used:
 
 1. _folium_ -- A python package for visualizing maps that makes it easy to visualize data that's been manipulated in Python on an interactive leaflet map. It enables both the binding of data to a map for choropleth visualizations as well as passing rich vector/raster/HTML visualizations as markers on the map.
 
-2. _requests_ -- A python package to call REST APIs seamlessly and easily
+2. _requests_ -- A python package to call REST APIs securely and easily
 
 3. _geopy_ -- A python client for several popular geocoding web services which makes it easy to locate the coordinates of addresses, cities, countries, and landmarks across the globe using third-party geocoders and other data sources.
 
@@ -142,6 +142,6 @@ Solution:
 ---------------------------------------------------------------------------------------
 
 Visualize all the vehicle nodes as a cluster on a map
-Clone the module from the repo and run "visual_map.html" to view the result
+Clone the module from the repo, run "main.py" python file and open "visual_map.html" to view the result
 
-PS: DEMO screenshots available in D2D_Vehicle_Location_Tracker/src/screenshots/README.md file
+PS: DEMO screenshots available in D2D_Vehicle_Location_Tracker/src/screenshots/README.md
