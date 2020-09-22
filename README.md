@@ -32,9 +32,9 @@ Overview of "D2D_Vehicle_Location_API" Workflow:
 Project Structure:
 --------------------------------------------------------------------------------------
 
-1. _lambda_function.py_ -- Main function for "D2D_Vehicle_Location_API" workflow
-2. _requirements.txt_ -- Requirements file which contains the dependencies
-3. _api_creds.yml_ -- API key credentials to call REST APIs
+1. lambda_function.py -- _Main function for "D2D_Vehicle_Location_API" workflow_
+2. requirements.txt -- _Requirements file which contains the dependencies_
+3. api_creds.yml -- _API key credentials to call REST APIs_
 
 
 Pre requisites:
@@ -82,6 +82,12 @@ Libraries Used:
 
 3. _geopy_ -- A python client for several popular geocoding web services which makes it easy to locate the coordinates of addresses, cities, countries, and landmarks across the globe using third-party geocoders and other data sources.
 
+4. _boto3_ -- An AWS SDK Client used to call different AWS resources via APIs
+
+5. _unittest_ -- An unit test library used to mock test scenarios and validate assertions
+
+6. _moto_ -- A mocking framework used in test functions to mock AWS resources such as DynamoDB, S3 etc..
+
 
 Overview of "D2D_Vehicle_Location_Tracker" Workflow:
 ------------------------------------------------------------------------------------
@@ -106,12 +112,17 @@ Overview of "D2D_Vehicle_Location_Tracker" Workflow:
 Project Structure:
 --------------------------------------------------------------------------------------
 
-1. _src/main.py_ -- Main function for "D2D_Vehicle_Location_API" workflow
-2. _src/vehicle_location_mapping.py_ -- Function which updates the vehicle's location by calculating the distance
-3. _src/api_url.py_ -- File which contains all the endpoints
-4. _src/load_json_file_ -- Generic file which loads JSON file and returns the data
-5. _src/vehicle.json_ -- JSON file which contains vehicle data
-6. _src/visual_map.html_ -- HTML file for the map visualization
+1. src/main.py -- _Main function for "D2D_Vehicle_Location_API" workflow_
+2. src/vehicle_location_mapping.py -- _Function which updates the vehicle's location by calculating the distance_
+3. src/api_url.py -- _File which contains all the endpoints_
+4. src/load_json_file.py -- _Generic file which loads JSON file and returns the data_
+5. src/vehicle.json -- _JSON file which contains vehicle data_
+6. src/visual_map.html -- _HTML file for the map visualization_
+7. src/tests/vehicle_location_test.py -- _Test file where all the unit test cases related to the project are written
+8. src/lambda_api/Vehicle_Registration.py -- _API lambda to register the vehicle_
+9. src/lambda_api/Vehicle_Location_Update.py -- _API lambda to update the location coordinates of the vehicle_
+10. src/lambda_api/Vehicle_DeRegistration.py -- _API lambda to de-register the vehicle_
+11. src/screenshots -- _Screenshots of the visual map_
 
 
 Pre requisites:
@@ -141,7 +152,6 @@ DynamoDB table structure:
 Solution:
 ---------------------------------------------------------------------------------------
 
-Visualize all the vehicle nodes as a cluster on a map
-Clone the module from the repo, run "main.py" python file and open "visual_map.html" to view the result
+To visualize all the vehicle nodes as a cluster on a map, clone the module from the repo, run "main.py" python file and open "visual_map.html" to view the result
 
 PS: DEMO screenshots available in D2D_Vehicle_Location_Tracker/src/screenshots/README.md
