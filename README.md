@@ -1,6 +1,34 @@
 # Visualize Vehicle Real-Time Locations #
 
-Overview:
+Problem Statement:
+------------------------------------------------------------------------------------
+door2door service collects the live position of all vehicles in its fleet in real-time via a GPS sensor in each vehicle. To manage the service, door2door needs to be able to visualize the location and bearing of all vehicles in real-time.
+
+
+Approach:
+------------------------------------------------------------------------------------
+
+* Create an API to register a vehicle
+* Create an API to collect vehicle location details
+* Create an API to de-register a vehicle
+* Store and update vehicle data in a database table
+* Call the endpoint to register the vehicle
+* Call the endpoint to start updating vehicle location data
+* Plot the location coordinates on a map for the visualization
+* Derive the routes by calling update enpoint for updating vehicle location data
+* Call the endpoint to de-register the vehicle after the destination is reached
+* Test the solution with vehicle.json file which contains all the vehicle location data
+* Visualize the cluster map with vehicle locations
+
+
+Tech Stack:
+------------------------------------------------------------------------------------
+
+1. Python 3.7
+2. AWS
+
+
+Solution:
 ------------------------------------------------------------------------------------
 
 This software will register all the vehicles, collects the live position and updates the location to the system and also de-registers the vehicle as and when the location updates are completed. The solution of this software is expected to visualize all the registered vehicle's real-time location data on Google Maps.
@@ -35,6 +63,7 @@ Project Structure:
 1. lambda_function.py -- _Main function for "D2D_Vehicle_Location_API" workflow_
 2. requirements.txt -- _Requirements file which contains the project dependencies_
 3. api_creds.yml -- _API key credentials to call REST APIs_
+4. vehicle_data.csv -- _An extract of Vehicle's valid position data stored in DynamoDB table for future analysis_
 
 
 Pre requisites:
