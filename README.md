@@ -33,7 +33,7 @@ Project Structure:
 --------------------------------------------------------------------------------------
 
 1. lambda_function.py -- _Main function for "D2D_Vehicle_Location_API" workflow_
-2. requirements.txt -- _Requirements file which contains the dependencies_
+2. requirements.txt -- _Requirements file which contains the project dependencies_
 3. api_creds.yml -- _API key credentials to call REST APIs_
 
 
@@ -123,6 +123,7 @@ Project Structure:
 9. src/lambda_api/Vehicle_Location_Update.py -- _API lambda to update the location coordinates of the vehicle_
 10. src/lambda_api/Vehicle_DeRegistration.py -- _API lambda to de-register the vehicle_
 11. src/screenshots -- _Screenshots of the visual map_
+12. src/requirements.txt -- _Requirements file which contains the project dependencies_
 
 
 Pre requisites:
