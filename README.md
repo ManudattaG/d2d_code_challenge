@@ -94,10 +94,11 @@ DynamoDB table structure:
 Solution:
 ---------------------------------------------------------------------------------------
 
-Visualize all the vehicles on a map (in browser) which are registered and sent the location updates to the system
+Visualize the location of all the vehicles on a map (in any browser) by clicking the below web URL.
+
 URL --> https://vehicle-visual-map.s3.amazonaws.com/map/visual_map.html
 
-** NOTE: To register a new vehicle and start sending location updates, call the REST endpoints and view the result by clicking the above URL **
+** NOTE: To register a new vehicle and start sending location updates, call the REST endpoints and view the result by clicking on the same website URL **
 
 PS: DEMO screenshots available in D2D_Vehicle_Location_API/README.md
 
@@ -147,7 +148,7 @@ Project Structure:
 4. src/load_json_file.py -- _Generic file which loads JSON file and returns the data_
 5. src/vehicle.json -- _JSON file which contains vehicle data_
 6. src/visual_map.html -- _HTML file for the map visualization_
-7. src/tests/vehicle_location_test.py -- _Test file where all the unit test cases related to the project are written
+7. src/tests/vehicle_location_test.py -- _Test file where all the unit test cases related to the project are written_
 8. src/lambda_api/Vehicle_Registration.py -- _API lambda to register the vehicle_
 9. src/lambda_api/Vehicle_Location_Update.py -- _API lambda to update the location coordinates of the vehicle_
 10. src/lambda_api/Vehicle_DeRegistration.py -- _API lambda to de-register the vehicle_
@@ -182,6 +183,6 @@ DynamoDB table structure:
 Solution:
 ---------------------------------------------------------------------------------------
 
-To visualize all the vehicle nodes as a cluster on a map, clone the module from the repo, run "main.py" python file and open "visual_map.html" to view the result
+To visualize all the vehicle nodes as a cluster within the city boundaries on a map, run "main.py" file and open "visual_map.html" to view the result
 
 PS: DEMO screenshots available in D2D_Vehicle_Location_Tracker/src/screenshots/README.md
