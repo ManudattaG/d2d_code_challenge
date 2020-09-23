@@ -135,7 +135,7 @@ Overview of "D2D_Vehicle_Location_Tracker" Workflow:
 3. De-Register API (DELETE /vehicles/:id)
     * De-Register's the vehicle and the registered status is set to "False" in DynamoDB table
     * Map is updated by removing the de-registered vehicle from the plot
-    * Saves the updated map in S3 bucket for the visualization
+    * Saves the updated map in an HTML file for the visualization
     
     
 Project Structure:
