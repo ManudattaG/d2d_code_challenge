@@ -148,7 +148,7 @@ Overview of "D2D_Vehicle_Location_Tracker" Workflow:
 Architecture Diagram
 --------------------------------------------------------------------------------------
 
-![Alt text](/D2D_Vehicle_Location_Tracker/src/architecture_diagram.png?raw=true "Architecture Diagram")
+![Alt text](/D2D_Vehicle_Location_Tracker/src/architecture_diagram.png)
     
     
 Project Structure:
