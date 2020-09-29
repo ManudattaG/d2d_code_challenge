@@ -57,7 +57,8 @@ Overview of "D2D_Vehicle_Location_API" Workflow:
     * Saves the updated map in S3 bucket for the visualization
     
     
-# Architecture Diagram #
+Architecture Diagram
+--------------------------------------------------------------------------------------
 
 ![Alt text](/D2D_Vehicle_Location_API/architecture_diagram.png?raw=true "Architecture Diagram")
     
@@ -144,7 +145,8 @@ Overview of "D2D_Vehicle_Location_Tracker" Workflow:
     * Saves the updated map in an HTML file for the visualization
     
     
-# Architecture Diagram #
+Architecture Diagram
+--------------------------------------------------------------------------------------
 
 ![Alt text](/D2D_Vehicle_Location_Tracker/src/architecture_diagram.png?raw=true "Architecture Diagram")
     
