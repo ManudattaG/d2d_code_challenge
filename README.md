@@ -57,6 +57,11 @@ Overview of "D2D_Vehicle_Location_API" Workflow:
     * Saves the updated map in S3 bucket for the visualization
     
     
+# Architecture Diagram #
+
+![Alt text](/D2D_Vehicle_Location_API/architecture_diagram.png?raw=true "Architecture Diagram")
+    
+    
 Project Structure:
 --------------------------------------------------------------------------------------
 
@@ -127,7 +132,7 @@ Overview of "D2D_Vehicle_Location_Tracker" Workflow:
     * This vehicle is eligible to start emitting location updates
     
 2. Location Update API (POST /vehicles/:id/locations)
-    * Updates the location on map until the destination is reached (nodes provides in vehicle.json file)
+    * Updates the location on map until the destination is reached (nodes provided in vehicle.json file)
     * Gets the nodes to update each step from the JSON file
     * Calculates vehicle's distance if it is within 3.5km radius (as per requirement)
     * Plots all the nodes and forms a cluster within the boundaries
@@ -139,10 +144,15 @@ Overview of "D2D_Vehicle_Location_Tracker" Workflow:
     * Saves the updated map in an HTML file for the visualization
     
     
+# Architecture Diagram #
+
+![Alt text](/D2D_Vehicle_Location_Tracker/src/architecture_diagram.png?raw=true "Architecture Diagram")
+    
+    
 Project Structure:
 --------------------------------------------------------------------------------------
 
-1. src/main.py -- _Main function for "D2D_Vehicle_Location_API" workflow_
+1. src/main.py -- _Main function for "D2D_Vehicle_Location_Tracker" workflow_
 2. src/vehicle_location_mapping.py -- _Function which updates the vehicle's location by calculating the distance_
 3. src/api_url.py -- _File which contains all the endpoints_
 4. src/load_json_file.py -- _Generic file which loads JSON file and returns the data_
